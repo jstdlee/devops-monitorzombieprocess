@@ -1,0 +1,7 @@
+[Unit]
+Description=Record and check for a long job with a stalled output file
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/process-guard
+Nice=19
