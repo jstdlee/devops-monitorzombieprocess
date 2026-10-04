@@ -8,7 +8,7 @@ A process matches only when all of these are true:
 - An output file named in its command has not changed.
   The file mtime is at least 10 minutes old, and a second look confirms it.
 
-The alert is one HTTP POST to https://ntfy.sh/thatIsalert.
+The alert is one HTTP POST to https://ntfy.sh/dummy.
 The body is the pid and nothing else.
 
 Each run records one sample and exits. A timer runs it every 5 minutes.
@@ -30,7 +30,7 @@ LONG_SECONDS = 15 * 60
 STALE_SECONDS = 10 * 60
 HOT_CPU = 0.85
 HOT_GPU = 50
-NTFY_URL = "https://ntfy.sh/thatIsalert"
+NTFY_URL = "https://ntfy.sh/dummy"
 
 HOME = Path.home()
 STATE_DIR = HOME / ".local/state/process-guard"

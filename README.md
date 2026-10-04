@@ -2,7 +2,7 @@
 
 A timer checks running processes every 5 minutes. It sends a pid when a long job is busy and its output file has stopped changing.
 
-The message body is the pid only. The target is `NTFY_URL` in `process-guard`.
+The message body is the pid only. The target is `NTFY_URL` in `process-guard`. The shipped value is `https://ntfy.sh/dummy`. Replace `dummy` with your own topic before you run it.
 
 ## Install
 
